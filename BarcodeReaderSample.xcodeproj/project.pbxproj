@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		6AFAA9C721E5B59D005D334C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFAA9C621E5B59D005D334C /* AppDelegate.swift */; };
 		6AFAA9C921E5B59D005D334C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFAA9C821E5B59D005D334C /* ViewController.swift */; };
-		6AFAA9CC21E5B59D005D334C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFAA9CA21E5B59D005D334C /* Main.storyboard */; };
 		6AFAA9CE21E5B59E005D334C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AFAA9CD21E5B59E005D334C /* Assets.xcassets */; };
 		6AFAA9D121E5B59E005D334C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFAA9CF21E5B59E005D334C /* LaunchScreen.storyboard */; };
 		6AFAA9DC21E5B59E005D334C /* BarcodeReaderSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFAA9DB21E5B59E005D334C /* BarcodeReaderSampleTests.swift */; };
 		6AFAA9E721E5B59E005D334C /* BarcodeReaderSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFAA9E621E5B59E005D334C /* BarcodeReaderSampleUITests.swift */; };
+		6AFAA9F621E5B5F1005D334C /* BarCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFAA9F521E5B5F1005D334C /* BarCodeReaderViewController.swift */; };
+		6AFAA9F821E5B61F005D334C /* BarCodeReaderViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFAA9F721E5B61F005D334C /* BarCodeReaderViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 		6AFAA9C321E5B59D005D334C /* BarcodeReaderSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarcodeReaderSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AFAA9C621E5B59D005D334C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AFAA9C821E5B59D005D334C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6AFAA9CB21E5B59D005D334C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6AFAA9CD21E5B59E005D334C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AFAA9D021E5B59E005D334C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AFAA9D221E5B59E005D334C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		6AFAA9E221E5B59E005D334C /* BarcodeReaderSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcodeReaderSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AFAA9E621E5B59E005D334C /* BarcodeReaderSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeReaderSampleUITests.swift; sourceTree = "<group>"; };
 		6AFAA9E821E5B59E005D334C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AFAA9F521E5B5F1005D334C /* BarCodeReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarCodeReaderViewController.swift; sourceTree = "<group>"; };
+		6AFAA9F721E5B61F005D334C /* BarCodeReaderViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BarCodeReaderViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +99,9 @@
 		6AFAA9C521E5B59D005D334C /* BarcodeReaderSample */ = {
 			isa = PBXGroup;
 			children = (
+				6AFAA9F421E5B5CE005D334C /* ViewController */,
 				6AFAA9C621E5B59D005D334C /* AppDelegate.swift */,
 				6AFAA9C821E5B59D005D334C /* ViewController.swift */,
-				6AFAA9CA21E5B59D005D334C /* Main.storyboard */,
 				6AFAA9CD21E5B59E005D334C /* Assets.xcassets */,
 				6AFAA9CF21E5B59E005D334C /* LaunchScreen.storyboard */,
 				6AFAA9D221E5B59E005D334C /* Info.plist */,
@@ -123,6 +125,15 @@
 				6AFAA9E821E5B59E005D334C /* Info.plist */,
 			);
 			path = BarcodeReaderSampleUITests;
+			sourceTree = "<group>";
+		};
+		6AFAA9F421E5B5CE005D334C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6AFAA9F521E5B5F1005D334C /* BarCodeReaderViewController.swift */,
+				6AFAA9F721E5B61F005D334C /* BarCodeReaderViewController.storyboard */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +242,7 @@
 			files = (
 				6AFAA9D121E5B59E005D334C /* LaunchScreen.storyboard in Resources */,
 				6AFAA9CE21E5B59E005D334C /* Assets.xcassets in Resources */,
-				6AFAA9CC21E5B59D005D334C /* Main.storyboard in Resources */,
+				6AFAA9F821E5B61F005D334C /* BarCodeReaderViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +269,7 @@
 			files = (
 				6AFAA9C921E5B59D005D334C /* ViewController.swift in Sources */,
 				6AFAA9C721E5B59D005D334C /* AppDelegate.swift in Sources */,
+				6AFAA9F621E5B5F1005D334C /* BarCodeReaderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +305,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6AFAA9CA21E5B59D005D334C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6AFAA9CB21E5B59D005D334C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6AFAA9CF21E5B59E005D334C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,7 +437,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BarcodeReaderSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +456,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BarcodeReaderSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
